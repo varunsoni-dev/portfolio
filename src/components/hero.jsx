@@ -1,5 +1,7 @@
 import "./Hero.css";
 import profile from "../assets/images/profile.jpeg";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 
 function Hero() {
   return (
@@ -37,16 +39,31 @@ function Hero() {
 
       <div className="social-links">
 
-        <a href="#">
-          GitHub
+        <a
+          href="https://github.com/your-github-username"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <FaGithub />
         </a>
 
-        <a href="#">
-          LinkedIn
+        <a
+          href="https://linkedin.com/in/your-linkedin"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+          <FaLinkedin />
         </a>
 
-        <a href="#">
-          LeetCode
+        <a
+          href="https://leetcode.com/your-username"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LeetCode"
+        >
+          <SiLeetcode />
         </a>
 
       </div>
