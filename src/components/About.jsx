@@ -2,6 +2,30 @@ import "./About.css";
 
 function About() {
 
+    const aboutCards = [
+
+        {
+            title:"🎓 Education",
+            description:"B.E. CSE (AI) with Microsoft Program"
+        },
+
+        {
+            title:"💻 Focus",
+            description:"Artificial Intelligence & Full Stack Development"
+        },
+
+        {
+            title:"🚀 Career Goal",
+            description:"AI Software Engineer"
+        },
+
+        {
+            title:"🌍 Based In",
+            description:"India • Open to Global Opportunities"
+        }
+
+    ];
+
     return (
 
         <section className="about" id="about">
@@ -10,43 +34,52 @@ function About() {
 
                 <div className="about-text-content">
 
-                    {/* About paragraph */}
+                    <h2 className="section-title">
+                        About Me
+                    </h2>
+
+                    <p className="about-text">
+                        Hi, I'm <span className="highlight">Varun Soni</span>, a passionate
+                        Computer Science student specializing in
+                        <span className="highlight"> Artificial Intelligence</span> through
+                        Microsoft's industry-integrated program.
+
+                        <br /><br />
+
+                        I enjoy building intelligent software, modern web applications,
+                        and solving real-world problems using technology. My interests
+                        include AI, Full Stack Development, and creating clean,
+                        user-friendly digital experiences.
+
+                        <br /><br />
+
+                        My goal is to become an
+                        <span className="highlight"> AI Software Engineer</span>
+                        working on products that impact millions of users worldwide.
+                        I'm continuously learning new technologies and improving my
+                        problem-solving skills every day.
+                    </p>
 
                 </div>
 
                 <div className="about-info">
 
-                    <div className="info-card">
+                    {
+                        aboutCards.map((card) => (
 
-                        <h3>🎓 Education</h3>
+                            <div
+                                className="info-card"
+                                key={card.title}
+                            >
 
-                        <p>B.E. CSE (AI) with Microsoft Program</p>
+                                <h3>{card.title}</h3>
 
-                    </div>
+                                <p>{card.description}</p>
 
-                    <div className="info-card">
+                            </div>
 
-                        <h3>💻 Focus</h3>
-
-                        <p>Artificial Intelligence & Full Stack Development</p>
-
-                    </div>
-
-                    <div className="info-card">
-
-                        <h3>🚀 Career Goal</h3>
-
-                        <p>AI Software Engineer</p>
-
-                    </div>
-
-                    <div className="info-card">
-
-                        <h3>🌍 Location</h3>
-
-                        <p>India • Open to Global Opportunities</p>
-
-                    </div>
+                        ))
+                    }
 
                 </div>
 
