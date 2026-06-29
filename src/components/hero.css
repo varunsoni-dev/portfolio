@@ -257,3 +257,52 @@
     }
 
 }
+
+@media (max-width:768px){
+
+    .hero{
+
+        flex-direction:column-reverse;
+
+        text-align:center;
+
+        padding:60px 25px;
+
+        gap:40px;
+    }
+
+    .hero-name{
+
+        font-size:48px;
+    }
+
+    .hero-title{
+
+        font-size:26px;
+    }
+
+    .hero-description{
+
+        font-size:18px;
+    }
+
+    .profile-image{
+
+    width:280px;
+
+        height:280px;
+    }
+
+    .hero-buttons{
+
+    flex-direction:column;
+
+        align-items:center;
+    }
+
+    .social-links{
+
+        justify-content:center;
+    }
+
+}
