@@ -1,0 +1,68 @@
+/* Main navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 100px;
+
+  background-color: #111827;
+}
+
+/* Logo */
+.logo {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Navigation list */
+.nav-links {
+  display: flex;
+
+  list-style: none;
+
+  gap: 35px;
+}
+
+/* Each menu item */
+.nav-links li {
+  color: white;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.nav-links li:hover {
+  color:var(--primary-color);
+}
+
+.resume-btn {
+  background: #38bdf8;
+  color: white;
+
+  border: none;
+
+  padding: 12px 24px;
+
+  border-radius: 10px;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition:
+    transform .3s,
+    box-shadow .3s,
+    background .3s;
+
+}
+
+.resume-btn:hover {
+  background: #0ea5e9;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 20px rgba(56, 189, 248, 0.35);
+}
