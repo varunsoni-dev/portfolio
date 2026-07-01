@@ -54,7 +54,7 @@ function About() {
                         <br /><br />
 
                         My goal is to become an
-                        <span className="highlight"> AI Software Engineer</span>
+                        <span className="highlight"> AI Software Engineer</span> 
                         working on products that impact millions of users worldwide.
                         I'm continuously learning new technologies and improving my
                         problem-solving skills every day.
